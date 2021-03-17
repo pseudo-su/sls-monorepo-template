@@ -1,8 +1,11 @@
 dependencies:
   '@rush-temp/demo-app': 'file:projects/demo-app.tgz'
-  next: 10.0.9_react-dom@17.0.1+react@17.0.1
+  '@types/node': 14.14.35
+  '@types/react': 17.0.3
+  next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
+  typescript: 4.2.3
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.11:
@@ -109,6 +112,26 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
+  /@types/node/14.14.35:
+    dev: false
+    resolution:
+      integrity: sha512-Lt+wj8NVPx0zUmUwumiVXapmaLUcAk3yPuHCFVXras9k5VT9TdhJqKqGVUQCD60OTMCl0qxJ57OiTL0Mic3Iag==
+  /@types/prop-types/15.7.3:
+    dev: false
+    resolution:
+      integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+  /@types/react/17.0.3:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      '@types/scheduler': 0.16.1
+      csstype: 3.0.7
+    dev: false
+    resolution:
+      integrity: sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
+  /@types/scheduler/0.16.1:
+    dev: false
+    resolution:
+      integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
   /anser/1.4.9:
     dev: false
     resolution:
@@ -461,6 +484,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4slyYc1w4JhSbhVX5xi9G0aQ42JnRyPg+7l7cqoNyoIDzfWx40Rq3JQZnoAWDu60A4AvKVp9ln/YSUOdhDX68g==
+  /csstype/3.0.7:
+    dev: false
+    resolution:
+      integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
   /data-uri-to-buffer/3.0.1:
     dev: false
     engines:
@@ -857,7 +884,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-6iM8R99ze45ivyH8vybJ7X0yekIcPf5GgLV5K0ENCbmRcaRIDoj37BC8iLEmaaBfqqb8enuZ5p0uhY+lVAbAcA==
-  /next/10.0.9_react-dom@17.0.1+react@17.0.1:
+  /next/10.0.9_5347ba9dae72bc17e95cc7756ff465f1:
     dependencies:
       '@babel/runtime': 7.12.5
       '@hapi/accept': 5.0.1
@@ -884,7 +911,7 @@ packages:
       node-libs-browser: 2.2.1
       p-limit: 3.1.0
       path-browserify: 1.0.1
-      pnp-webpack-plugin: 1.6.4
+      pnp-webpack-plugin: 1.6.4_typescript@4.2.3
       postcss: 8.1.7
       process: 0.11.10
       prop-types: 15.7.2
@@ -908,6 +935,7 @@ packages:
       react: ^16.6.0 || ^17
       react-dom: ^16.6.0 || ^17
       sass: ^1.3.0
+      typescript: '*'
     peerDependenciesMeta:
       fibers:
         optional: true
@@ -1065,12 +1093,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
-  /pnp-webpack-plugin/1.6.4:
+  /pnp-webpack-plugin/1.6.4_typescript@4.2.3:
     dependencies:
-      ts-pnp: 1.2.0
+      ts-pnp: 1.2.0_typescript@4.2.3
     dev: false
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   /postcss/7.0.35:
@@ -1472,7 +1502,9 @@ packages:
     dev: false
     resolution:
       integrity: sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
-  /ts-pnp/1.2.0:
+  /ts-pnp/1.2.0_typescript@4.2.3:
+    dependencies:
+      typescript: 4.2.3
     dev: false
     engines:
       node: '>=6'
@@ -1493,6 +1525,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg==
+  /typescript/4.2.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
   /unpipe/1.0.0:
     dev: false
     engines:
@@ -1570,17 +1609,24 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
   'file:projects/demo-app.tgz':
     dependencies:
-      next: 10.0.9_react-dom@17.0.1+react@17.0.1
+      '@types/node': 14.14.35
+      '@types/react': 17.0.3
+      next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
+      typescript: 4.2.3
     dev: false
     name: '@rush-temp/demo-app'
     resolution:
-      integrity: sha512-FsDD7wwtzI1J9puxXXej+wt7rCVqNZqWCTQFLIIDk7Gjk0J7Olbwjlc4mdShPfUdHtqdNDn3NwOrjwNqA1of7g==
+      integrity: sha512-yolMT8zKv7ptUg+QkI5xnq3A4DZRnG8xTicuQyhv+ARsd50k2+ch+hDl61Jy96k8Wsy+h8sHToz1EkpZolTzeA==
       tarball: 'file:projects/demo-app.tgz'
     version: 0.0.0
+registry: ''
 specifiers:
   '@rush-temp/demo-app': 'file:./projects/demo-app.tgz'
+  '@types/node': ~14.14.35
+  '@types/react': ~17.0.3
   next: 10.0.9
   react: 17.0.1
   react-dom: 17.0.1
+  typescript: ~4.2.3
