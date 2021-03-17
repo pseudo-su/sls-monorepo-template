@@ -19,11 +19,29 @@ plugins:
 
 functions:
   index:
-    handler: ./lambda.handler
+    handler: lambda.handler
     events:
       - http:
           method: GET
           path: /
+
+  nested:
+    handler: lambda.handler
+    events:
+      - http:
+          method: GET
+          path: /nested/{any+}
+
+  static:
+    handler: lambda.handler
+    events:
+      - http:
+          method: GET
+          path: /_next/static/{any+}
+
+  fallback:
+    handler: lambda.handler
+    events:
       - http:
           method: GET
           path: /{any+}
