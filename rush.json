@@ -390,8 +390,8 @@
    */
   "projects": [
     {
-      "packageName": "demo-app",
-      "projectFolder": "services/demo-app",
+      "packageName": "web-demo-app",
+      "projectFolder": "services/web-demo-app",
       "reviewCategory": "production"
     }
   ]
