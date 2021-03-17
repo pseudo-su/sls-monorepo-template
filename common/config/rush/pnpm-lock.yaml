@@ -1,8 +1,10 @@
 dependencies:
   '@next/env': 10.0.9
+  '@rush-temp/next-serverless-plugin': 'file:projects/next-serverless-plugin.tgz'
   '@rush-temp/next-serverless-webpack-plugin': 'file:projects/next-serverless-webpack-plugin.tgz'
-  '@rush-temp/web-demo-app-1': 'file:projects/web-demo-app-1.tgz'
-  '@rush-temp/web-demo-app-2': 'file:projects/web-demo-app-2.tgz'
+  '@rush-temp/with-serverless-component': 'file:projects/with-serverless-component.tgz'
+  '@rush-temp/with-serverless-plugin': 'file:projects/with-serverless-plugin.tgz'
+  '@rush-temp/with-webpack-plugin': 'file:projects/with-webpack-plugin.tgz'
   '@sls-next/serverless-plugin': 2.6.4_next@10.0.9
   '@types/node': 14.14.35
   '@types/react': 17.0.3
@@ -6705,6 +6707,13 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-zshzwQW7gG7hjpBlgeQP9RuyPGNxvJdzR8SUM3QhxCnLjWN2E7j3dOvpeDcQoETfHx0urRS7EtmVToql7YpU4A==
+  'file:projects/next-serverless-plugin.tgz':
+    dev: false
+    name: '@rush-temp/next-serverless-plugin'
+    resolution:
+      integrity: sha512-nz9mVgK4y7tMvvrypKi2/nrHFhdeWMYMPbi3XGdYpm7nZyhm2hdLgrSVv2MfJvIqU5qMh0kQbQg4pi/N9FtEpA==
+      tarball: 'file:projects/next-serverless-plugin.tgz'
+    version: 0.0.0
   'file:projects/next-serverless-webpack-plugin.tgz':
     dev: false
     name: '@rush-temp/next-serverless-webpack-plugin'
@@ -6712,7 +6721,7 @@ packages:
       integrity: sha512-kwLFzZsDUgCdHISl+VZPt1HGtceTn1l28PFN6hNsFWXM0eG812y8IMI9pZ6wkaTJu6Oae+8009kh8q+i5TFDDg==
       tarball: 'file:projects/next-serverless-webpack-plugin.tgz'
     version: 0.0.0
-  'file:projects/web-demo-app-1.tgz':
+  'file:projects/with-serverless-component.tgz':
     dependencies:
       '@next/env': 10.0.9
       '@sls-next/serverless-plugin': 2.6.4_next@10.0.9
@@ -6727,12 +6736,32 @@ packages:
       serverless-offline: 6.8.0_serverless@2.30.3
       typescript: 4.2.3
     dev: false
-    name: '@rush-temp/web-demo-app-1'
+    name: '@rush-temp/with-serverless-component'
     resolution:
-      integrity: sha512-aLrioakk/+4c0pxgtsL1nvxi9USEQTUVgAnxviHxeuFetNx0scCv0DYW7m/bdFpoFaYoAKp0WLHX5k2IPnfXbw==
-      tarball: 'file:projects/web-demo-app-1.tgz'
+      integrity: sha512-iAohzSuBjlLYrAuZxqNiT/DO+T3n36wA/jfSWSq8W8446q86be9FNgG8KGrxyBZF6qjlCww6RGzDns92krLQBQ==
+      tarball: 'file:projects/with-serverless-component.tgz'
     version: 0.0.0
-  'file:projects/web-demo-app-2.tgz':
+  'file:projects/with-serverless-plugin.tgz':
+    dependencies:
+      '@next/env': 10.0.9
+      '@sls-next/serverless-plugin': 2.6.4_next@10.0.9
+      '@types/node': 14.14.35
+      '@types/react': 17.0.3
+      next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
+      next-aws-lambda: 2.5.1-alpha.0
+      next-aws-lambda-webpack-plugin: 0.2.8
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      serverless: 2.30.3
+      serverless-offline: 6.8.0_serverless@2.30.3
+      typescript: 4.2.3
+    dev: false
+    name: '@rush-temp/with-serverless-plugin'
+    resolution:
+      integrity: sha512-gkzYJVwdnqWB0lzKjWWhJouSng4ToLG3DEythBJn5qY6SFp3ZZSKheacmz5bTkRKxhVCc6XmqsiRoEEG2HASiA==
+      tarball: 'file:projects/with-serverless-plugin.tgz'
+    version: 0.0.0
+  'file:projects/with-webpack-plugin.tgz':
     dependencies:
       '@types/node': 14.14.35
       '@types/react': 17.0.3
@@ -6745,17 +6774,19 @@ packages:
       serverless-offline: 6.8.0_serverless@2.30.3
       typescript: 4.2.3
     dev: false
-    name: '@rush-temp/web-demo-app-2'
+    name: '@rush-temp/with-webpack-plugin'
     resolution:
-      integrity: sha512-k16d6AEoHpXo4zQAe9XEyCPYZLPOid6uZvUK6cfRCVANRplxjMv2+kxy23BsjW0MAAiyzEnSwZCWCW7+kUgnpg==
-      tarball: 'file:projects/web-demo-app-2.tgz'
+      integrity: sha512-YRhuH9f8P/qwJv+qoYBrrz78CHfP1wsIqPO+bE3ACbKGeObAVmQxHLB18p2G/kvVQlIkMg3XCh+xK7ixMXjbzA==
+      tarball: 'file:projects/with-webpack-plugin.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
   '@next/env': ~10.0.9
+  '@rush-temp/next-serverless-plugin': 'file:./projects/next-serverless-plugin.tgz'
   '@rush-temp/next-serverless-webpack-plugin': 'file:./projects/next-serverless-webpack-plugin.tgz'
-  '@rush-temp/web-demo-app-1': 'file:./projects/web-demo-app-1.tgz'
-  '@rush-temp/web-demo-app-2': 'file:./projects/web-demo-app-2.tgz'
+  '@rush-temp/with-serverless-component': 'file:./projects/with-serverless-component.tgz'
+  '@rush-temp/with-serverless-plugin': 'file:./projects/with-serverless-plugin.tgz'
+  '@rush-temp/with-webpack-plugin': 'file:./projects/with-webpack-plugin.tgz'
   '@sls-next/serverless-plugin': ~2.6.4
   '@types/node': ~14.14.35
   '@types/react': ~17.0.3

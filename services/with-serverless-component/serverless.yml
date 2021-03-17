@@ -1,0 +1,31 @@
+service: with-serverless-component
+
+frameworkVersion: "2"
+configValidationMode: error
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+  stage: dev
+  region: ap-southeast-2
+
+  apiGateway:
+    shouldStartNameWithService: true
+
+# package:
+#   exlude: []
+#   # exclude:
+#   #   - ./**
+
+plugins:
+  - "@sls-next/serverless-plugin"
+  - serverless-offline
+
+resources:
+
+#   Outputs:
+#     NewOutput:
+#       Description: "Output description"
+#       Value: "Example output"

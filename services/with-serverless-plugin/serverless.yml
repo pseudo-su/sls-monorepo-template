@@ -1,4 +1,4 @@
-service: web-demo-app-1
+service: with-serverless-plugin
 
 frameworkVersion: "2"
 configValidationMode: error
