@@ -16,7 +16,6 @@ provider:
 
 plugins:
   - serverless-offline
-  - serverless-domain-manager
 
 functions:
   index:
@@ -28,10 +27,3 @@ functions:
       - http:
           method: GET
           path: /{any+}
-custom:
-    customDomain:
-      stage: dev
-      # certificateName: ""
-      createRoute53Record: false
-      endpointType: "regional"
-      enabled: true

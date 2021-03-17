@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Page 1</title>
+        <title>Next 3 page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Page 1</h1>
+      <h1>Next 3 page</h1>
     </div>
   )
 }

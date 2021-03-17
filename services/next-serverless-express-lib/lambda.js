@@ -10,9 +10,11 @@ const server = es.createServer(handle);
 
 exports.handler = async function handler(event, context, callback) {
   try {
-    const result = await es.proxy(server, event, context).promise;
+    const result = await es.proxy(server, event, context, "PROMISE").promise;
     return result;
   } catch (e) {
+    // TODO: better way to handle errors
+    console.error(e);
     callback(null, {});
     // callback(null, {await failure({ status: false }, e)});
   }
