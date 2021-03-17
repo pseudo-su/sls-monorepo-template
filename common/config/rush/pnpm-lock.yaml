@@ -1,5 +1,5 @@
 dependencies:
-  '@rush-temp/demo-app': 'file:projects/demo-app.tgz'
+  '@rush-temp/web-demo-app': 'file:projects/web-demo-app.tgz'
   '@types/node': 14.14.35
   '@types/react': 17.0.3
   next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
@@ -1607,7 +1607,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-  'file:projects/demo-app.tgz':
+  'file:projects/web-demo-app.tgz':
     dependencies:
       '@types/node': 14.14.35
       '@types/react': 17.0.3
@@ -1616,14 +1616,14 @@ packages:
       react-dom: 17.0.1_react@17.0.1
       typescript: 4.2.3
     dev: false
-    name: '@rush-temp/demo-app'
+    name: '@rush-temp/web-demo-app'
     resolution:
-      integrity: sha512-yolMT8zKv7ptUg+QkI5xnq3A4DZRnG8xTicuQyhv+ARsd50k2+ch+hDl61Jy96k8Wsy+h8sHToz1EkpZolTzeA==
-      tarball: 'file:projects/demo-app.tgz'
+      integrity: sha512-oMiNdn2WIS5dV2yABgfPKASYnAM7QNZf0uZLzYm6tTfTG12jI6zNv1JPJW9ULFL2J+YdJIWrPy+RiRxDandEFA==
+      tarball: 'file:projects/web-demo-app.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
-  '@rush-temp/demo-app': 'file:./projects/demo-app.tgz'
+  '@rush-temp/web-demo-app': 'file:./projects/web-demo-app.tgz'
   '@types/node': ~14.14.35
   '@types/react': ~17.0.3
   next: 10.0.9
