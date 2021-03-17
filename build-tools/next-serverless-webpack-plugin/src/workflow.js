@@ -8,17 +8,17 @@ const workflow = async (context, dev, isServer, nextDistDir, options) => {
     return;
   }
 
-  const nextServerlessDir = path.join(context, nextDistDir, "/serverless");
+  const nextServerlessDir = path.join(context, nextDistDir, "serverless");
   assertExistDirectory(nextServerlessDir);
 
-  const nextServerlessPagesDir = path.join(context, nextServerlessDir, "/pages");
+  const nextServerlessPagesDir = path.join(nextServerlessDir, "pages");
   assertExistDirectory(nextServerlessPagesDir);
 
   const outputDir = path.join(context, options.outputDir);
   mkdir(outputDir);
 
   const pagesManifest = JSON.parse(
-    fs.readFileSync(path.join(nextServerlessDir, "serverless/pages-manifest.json"))
+    fs.readFileSync(path.join(nextServerlessDir, "pages-manifest.json"))
   );
 
   explore({

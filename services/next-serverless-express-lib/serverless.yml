@@ -1,0 +1,37 @@
+service: next-webpack-plugin
+
+frameworkVersion: "2"
+configValidationMode: error
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+  stage: dev
+  region: ap-southeast-2
+
+  apiGateway:
+    shouldStartNameWithService: true
+
+plugins:
+  - serverless-offline
+  - serverless-domain-manager
+
+functions:
+  index:
+    handler: ./lambda.handler
+    events:
+      - http:
+          method: GET
+          path: /
+      - http:
+          method: GET
+          path: /{any+}
+custom:
+    customDomain:
+      stage: dev
+      # certificateName: ""
+      createRoute53Record: false
+      endpointType: "regional"
+      enabled: true

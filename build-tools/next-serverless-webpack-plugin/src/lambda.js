@@ -48,9 +48,9 @@ const inPages = (pathEntry, pages) => {
 const explore = (args) => {
   console.log(args);
   const {
-    pagesManifest,
-    nextServerlessDir,
-    nextServerlessPagesDir,
+    // pagesManifest,
+    // nextServerlessDir,
+    // nextServerlessPagesDir,
     outputDir,
     options,
   } = args;
@@ -58,7 +58,7 @@ const explore = (args) => {
 
   mkdir(outputDir);
 
-  console.log(pages);
+  console.log("TODO: implement generating the serverless.yaml function definitions");
 
   // fs.readdir(pagesDir, (err, entries) => {
   //   if (err) {

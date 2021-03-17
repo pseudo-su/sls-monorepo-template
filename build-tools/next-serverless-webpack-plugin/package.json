@@ -1,5 +1,5 @@
 {
-  "name": "next-serverless-webpack-plugin",
+  "name": "@build-tool/next-serverless-webpack-plugin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

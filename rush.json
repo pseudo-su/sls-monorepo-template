@@ -381,28 +381,33 @@
    */
   "projects": [
     {
-      "packageName": "with-serverless-component",
-      "projectFolder": "services/with-serverless-component",
+      "packageName": "@service/next-serverless-component",
+      "projectFolder": "services/next-serverless-component",
       "reviewCategory": "production"
     },
     {
-      "packageName": "with-serverless-plugin",
-      "projectFolder": "services/with-serverless-plugin",
+      "packageName": "@service/next-serverless-express-lib",
+      "projectFolder": "services/next-serverless-express-lib",
       "reviewCategory": "production"
     },
     {
-      "packageName": "with-webpack-plugin",
-      "projectFolder": "services/with-webpack-plugin",
+      "packageName": "@service/next-serverless-plugin",
+      "projectFolder": "services/next-serverless-plugin",
       "reviewCategory": "production"
     },
     {
-      "packageName": "next-serverless-webpack-plugin",
-      "projectFolder": "tools/next-serverless-webpack-plugin",
+      "packageName": "@service/next-webpack-plugin",
+      "projectFolder": "services/next-webpack-plugin",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@build-tool/next-serverless-webpack-plugin",
+      "projectFolder": "build-tools/next-serverless-webpack-plugin",
       "reviewCategory": "development"
     },
     {
-      "packageName": "next-serverless-plugin",
-      "projectFolder": "tools/next-serverless-plugin",
+      "packageName": "@build-tool/next-serverless-plugin",
+      "projectFolder": "build-tools/next-serverless-plugin",
       "reviewCategory": "development"
     }
   ]

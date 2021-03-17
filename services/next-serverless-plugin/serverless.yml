@@ -1,4 +1,4 @@
-service: with-serverless-plugin
+service: next-serverless-plugin
 
 frameworkVersion: "2"
 configValidationMode: error
@@ -14,18 +14,6 @@ provider:
   apiGateway:
     shouldStartNameWithService: true
 
-# package:
-#   exlude: []
-#   # exclude:
-#   #   - ./**
-
 plugins:
   - "@sls-next/serverless-plugin"
   - serverless-offline
-
-resources:
-
-#   Outputs:
-#     NewOutput:
-#       Description: "Output description"
-#       Value: "Example output"

@@ -1,0 +1,7 @@
+service: next-serverless-component
+
+frameworkVersion: "2"
+configValidationMode: error
+
+myNextApplication:
+  component: "./node_modules/@sls-next/serverless-component"

@@ -1,5 +1,5 @@
 {
-  "name": "with-webpack-plugin",
+  "name": "@service/next-serverless-component",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,10 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "next-aws-lambda-webpack-plugin": "~0.2.8",
-    "next-aws-lambda": "~2.5.1-alpha.0"
+    "next-aws-lambda": "~2.5.1-alpha.0",
+    "@sls-next/serverless-plugin": "~2.6.4",
+    "@next/env": "~10.0.9",
+    "@sls-next/serverless-component": "~1.18.0"
   },
   "engines": {
     "yarn": "DO_NOT_USE",
@@ -25,6 +28,6 @@
     "@types/react": "~17.0.3",
     "serverless": "~2.30.3",
     "serverless-offline": "~6.8.0",
-    "next-serverless-webpack-plugin": "*"
+    "@build-tool/next-serverless-webpack-plugin": "*"
   }
 }
