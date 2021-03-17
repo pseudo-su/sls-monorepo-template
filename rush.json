@@ -408,6 +408,11 @@
       "packageName": "next-serverless-webpack-plugin",
       "projectFolder": "tools/next-serverless-webpack-plugin",
       "reviewCategory": "development"
+    },
+    {
+      "packageName": "next-serverless-plugin",
+      "projectFolder": "tools/next-serverless-plugin",
+      "reviewCategory": "development"
     }
   ]
 }
