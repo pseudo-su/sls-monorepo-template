@@ -24,7 +24,7 @@
     "@types/node": "~14.14.35",
     "@types/react": "~17.0.3",
     "serverless": "~2.30.3",
-    "@build-tool/next-serverless-plugin": "*",
-    "serverless-offline": "~6.8.0"
+    "@sls-next/serverless-plugin": "^2.6.4",
+    "serverless-offline": "^6.8.0"
   }
 }
