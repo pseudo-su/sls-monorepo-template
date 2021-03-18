@@ -15,7 +15,7 @@ provider:
     shouldStartNameWithService: true
 
 plugins:
-  - "@sls-next/serverless-plugin"
+  - "@build-tool/next-serverless-plugin"
   - serverless-offline
 
 custom:

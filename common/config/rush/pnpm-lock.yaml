@@ -6,11 +6,13 @@ dependencies:
   '@rush-temp/next-serverless-plugin-1': 'file:projects/next-serverless-plugin-1.tgz'
   '@rush-temp/next-serverless-webpack-plugin': 'file:projects/next-serverless-webpack-plugin.tgz'
   '@rush-temp/next-webpack-plugin': 'file:projects/next-webpack-plugin.tgz'
+  '@sls-next/next-aws-lambda': 2.6.3
   '@sls-next/serverless-component': 1.18.0
   '@sls-next/serverless-plugin': 2.6.4_next@10.0.9
   '@types/node': 14.14.35
   '@types/react': 17.0.3
   '@vendia/serverless-express': 4.3.4
+  aws-serverless-express: 3.4.0
   express: 4.17.1
   next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
   next-aws-lambda: 2.5.1-alpha.0
@@ -9025,12 +9027,13 @@ packages:
     dev: false
     name: '@rush-temp/next-serverless-express-lib'
     resolution:
-      integrity: sha512-hwAgkwnYdpnlgDn5NjWnNEiRIIdXbWuI66CStYTVg+Y2QLFBAqJ/nqFCmMnytX1XgHw0kPLTTFBlHMfFrztnVQ==
+      integrity: sha512-H1mGhaAYtnlXqmdts9+thS/e7kuKu3EWu6EBaDza/VPyGb8098clQSylIRwk9+TsXIoaDXPqQdaF0UmO7QRurg==
       tarball: 'file:projects/next-serverless-express-lib.tgz'
     version: 0.0.0
   'file:projects/next-serverless-plugin-1.tgz':
     dependencies:
       '@next/env': 10.0.9
+      '@sls-next/next-aws-lambda': 2.6.3
       '@sls-next/serverless-plugin': 2.6.4_next@10.0.9
       '@types/node': 14.14.35
       '@types/react': 17.0.3
@@ -9045,7 +9048,7 @@ packages:
     dev: false
     name: '@rush-temp/next-serverless-plugin-1'
     resolution:
-      integrity: sha512-DhQKKVgIve0utT4fS67FH8FKOlMEatMnmaCK4KEUAl8a3ju8IRmEGEy80Z85Dka+1nC/4CUeamqaA6q4pHEd8Q==
+      integrity: sha512-A6Z6qPJKvwYy6BuJPmyte539I5q+fZLpsjUbbcddKGAqinZMw4rEyqxmjesQr0EXdNupmlB+oKfr26ZgTkLU+w==
       tarball: 'file:projects/next-serverless-plugin-1.tgz'
     version: 0.0.0
   'file:projects/next-serverless-plugin.tgz':
@@ -9089,11 +9092,13 @@ specifiers:
   '@rush-temp/next-serverless-plugin-1': 'file:./projects/next-serverless-plugin-1.tgz'
   '@rush-temp/next-serverless-webpack-plugin': 'file:./projects/next-serverless-webpack-plugin.tgz'
   '@rush-temp/next-webpack-plugin': 'file:./projects/next-webpack-plugin.tgz'
+  '@sls-next/next-aws-lambda': ~2.6.3
   '@sls-next/serverless-component': ~1.18.0
   '@sls-next/serverless-plugin': ~2.6.4
   '@types/node': ~14.14.35
   '@types/react': ~17.0.3
   '@vendia/serverless-express': ~4.3.4
+  aws-serverless-express: ~3.4.0
   express: ~4.17.1
   next: 10.0.9
   next-aws-lambda: ~2.5.1-alpha.0
