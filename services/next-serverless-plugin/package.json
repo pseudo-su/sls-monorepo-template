@@ -11,8 +11,8 @@
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "@next/env": "~10.0.9",
-    "@sls-next/next-aws-lambda": "~2.6.3"
+    "@next/env": "10.0.9",
+    "@sls-next/next-aws-lambda": "^2.6.3"
   },
   "engines": {
     "yarn": "DO_NOT_USE",
@@ -25,6 +25,7 @@
     "@types/react": "~17.0.3",
     "serverless": "~2.30.3",
     "@sls-next/serverless-plugin": "^2.6.4",
+    "@build-tool/next-serverless-plugin": "*",
     "serverless-offline": "^6.8.0"
   }
 }
