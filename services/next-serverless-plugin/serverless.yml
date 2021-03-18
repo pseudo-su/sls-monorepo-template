@@ -17,3 +17,7 @@ provider:
 plugins:
   - "@sls-next/serverless-plugin"
   - serverless-offline
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true

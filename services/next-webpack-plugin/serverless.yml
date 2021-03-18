@@ -60,3 +60,7 @@ functions:
       - http:
           path: /
           method: ANY
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true

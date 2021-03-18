@@ -45,3 +45,7 @@ functions:
       - http:
           method: GET
           path: /{any+}
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
